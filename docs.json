@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "mint",
   "name": "Documentation",
   "colors": {
     "primary": "#8cb4bc",
@@ -20,7 +20,7 @@
         ]
       },
       {
-        "group": "Configuration",
+        "group": "Messages",
         "pages": [
           "configuration/messages/autoresponder"
         ]
