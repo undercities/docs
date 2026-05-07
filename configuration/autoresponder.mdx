@@ -1,7 +1,7 @@
 ---
 title: "Autoresponder"
 description: "Make the bot automatically respond to messages via triggers."
-icon: "arrow-down-arrow-up"
+icon: "arrow-up-down"
 ---
 
 ### **What are Autoresponders?**
@@ -23,11 +23,11 @@ You can make the bot reply to a message by setting it up with both a response, a
 
     <CodeGroup>
 
-    ```javascript Syntax
+    ```typescript Syntax
     ,autoresponder add (trigger), (response) [flags]
     ```
 
-    ```javascript Example
+    ```typescript Example
     ,autoresponder add cal, the goat --not_strict
     ```
 
@@ -39,11 +39,12 @@ You can make the bot reply to a message by setting it up with both a response, a
 
     <CodeGroup>
 
-    ```javascript Syntax
+    ```typescript Syntax
     ,autoresponder remove (trigger)
     ```
 
-    ```javascript Example
+    ```typescript
+     Example
     ,autoresponder remove cal
     ```
 
