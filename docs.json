@@ -22,8 +22,13 @@
       {
         "group": "Configuration",
         "pages": [
-          "configuration/autoresponder",
-          "configuration/fake-permissions"
+          "configuration/messages/autoresponder"
+        ]
+      },
+      {
+        "group": "Safety",
+        "pages": [
+          "safety/fake-permissions"
         ]
       }
     ]
