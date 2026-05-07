@@ -24,6 +24,7 @@
         "pages": [
           {
             "group": "Messages",
+            "icon": "message-square",
             "pages": [
               "configuration/messages/autoresponder"
             ]
