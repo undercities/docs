@@ -36,6 +36,12 @@
         "pages": [
           "safety/fake-permissions"
         ]
+      },
+      {
+        "group": "Resources",
+        "pages": [
+          "resources/flags"
+        ]
       }
     ]
   },
