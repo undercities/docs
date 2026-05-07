@@ -1,0 +1,52 @@
+---
+title: "Autoresponder"
+description: "Make the bot automatically respond to messages via triggers."
+icon: "arrow-down-arrow-up"
+---
+
+### **What are Autoresponders?**
+
+You can make the bot reply to a message by setting it up with both a response, and a trigger. Once someone sends the trigger, it sends or replies to the response. If you don't specify it being `--not_strict`, it's automatically a strict match.
+
+### **What are the flags and what do they mean?**
+
+- `--not_strict` - Make it respond to the trigger if it's in a sentence, instead of just the word alone
+- `--reply` - Make it reply to the trigger instead of sending a straight up message.
+- `--self_destruct (after time)` - Deletes the response after a time in seconds.
+- `--delete_trigger` - Deletes the message it responded or replied to.
+
+### **Setting up Autoresponders**
+
+<AccordionGroup>
+  <Accordion title="Create an autoresponder">
+    Run `autoresponder add` to create an autoresponder.
+
+    <CodeGroup>
+
+    ```javascript Syntax
+    ,autoresponder add (trigger), (response) [flags]
+    ```
+
+    ```javascript Example
+    ,autoresponder add cal, the goat --not_strict
+    ```
+
+    </CodeGroup>
+  </Accordion>
+
+  <Accordion title="Delete an autoresponder">
+    Run `autoresponder remove` to delete an autoresponder, flags aren't taken for this command.
+
+    <CodeGroup>
+
+    ```javascript Syntax
+    ,autoresponder remove (trigger)
+    ```
+
+    ```javascript Example
+    ,autoresponder remove cal
+    ```
+
+    </CodeGroup>
+  </Accordion>
+</AccordionGroup>

@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-Regular.woff2") format("woff2"),
+       url("/assets/fonts/Satoshi-Regular.woff") format("woff"),
+       url("/assets/fonts/Satoshi-Regular.ttf") format("truetype"),
+       url("/assets/fonts/Satoshi-Regular.eot") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-Italic.woff2") format("woff2"),
+       url("/assets/fonts/Satoshi-Italic.woff") format("woff"),
+       url("/assets/fonts/Satoshi-Italic.ttf") format("truetype"),
+       url("/assets/fonts/Satoshi-Italic.eot") format("embedded-opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-Medium.woff2") format("woff2"),
+       url("/assets/fonts/Satoshi-Medium.woff") format("woff"),
+       url("/assets/fonts/Satoshi-Medium.ttf") format("truetype"),
+       url("/assets/fonts/Satoshi-Medium.eot") format("embedded-opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-MediumItalic.woff2") format("woff2"),
+       url("/assets/fonts/Satoshi-MediumItalic.woff") format("woff"),
+       url("/assets/fonts/Satoshi-MediumItalic.ttf") format("truetype"),
+       url("/assets/fonts/Satoshi-MediumItalic.eot") format("embedded-opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-Bold.woff2") format("woff2"),
+       url("/assets/fonts/Satoshi-Bold.woff") format("woff"),
+       url("/assets/fonts/Satoshi-Bold.ttf") format("truetype"),
+       url("/assets/fonts/Satoshi-Bold.eot") format("embedded-opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-BoldItalic.woff2") format("woff2"),
+       url("/assets/fonts/Satoshi-BoldItalic.woff") format("woff"),
+       url("/assets/fonts/Satoshi-BoldItalic.ttf") format("truetype"),
+       url("/assets/fonts/Satoshi-BoldItalic.eot") format("embedded-opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-Black.woff2") format("woff2"),
+       url("/assets/fonts/Satoshi-Black.woff") format("woff"),
+       url("/assets/fonts/Satoshi-Black.ttf") format("truetype"),
+       url("/assets/fonts/Satoshi-Black.eot") format("embedded-opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/assets/fonts/Satoshi-BlackItalic.woff2") format("woff2"),
+       url("/assets/fonts/Satoshi-BlackItalic.woff") format("woff"),
+       url("/assets/fonts/Satoshi-BlackItalic.ttf") format("truetype"),
+       url("/assets/fonts/Satoshi-BlackItalic.eot") format("embedded-opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Satoshi Variable";
+  src: url("/assets/fonts/Satoshi-Variable.woff2") format("woff2"),
+       url("/assets/fonts/Satoshi-Variable.woff") format("woff"),
+       url("/assets/fonts/Satoshi-Variable.ttf") format("truetype"),
+       url("/assets/fonts/Satoshi-Variable.eot") format("embedded-opentype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi Variable";
+  src: url("/assets/fonts/Satoshi-VariableItalic.woff2") format("woff2"),
+       url("/assets/fonts/Satoshi-VariableItalic.woff") format("woff"),
+       url("/assets/fonts/Satoshi-VariableItalic.ttf") format("truetype"),
+       url("/assets/fonts/Satoshi-VariableItalic.eot") format("embedded-opentype");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, li, a {
+  font-family: "Satoshi", sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 900; 
+}
+
+h4, h5, h6 {
+  font-weight: 700; 
+}
+
+body {
+  font-weight: 400; 
+}
+
+em, i {
+  font-family: "Satoshi", sans-serif;
+  font-style: italic;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #504759 #0F0D12;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0F0D12;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #504759;
+  border-radius: 4px;
+  border: 1px solid #221F27;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #635768;
+}

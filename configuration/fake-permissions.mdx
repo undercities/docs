@@ -1,0 +1,78 @@
+---
+title: "Fake Permissions"
+description: "Restrict moderators from running commands using Discord's native moderation feature."
+icon: "shield"
+---
+
+### **What are Fake Permissions?**
+
+Instead of a user having a real dangerous permission, you can restrict them to only be able to use wtv's moderation commands instead of Discord's native moderation feature incase they decide they wanna cause chaos in your server.
+
+### **Setting up Fake Permissions**
+
+<AccordionGroup>
+  <Accordion title="Grant a fake permission to a role">
+    Run the `fakepermissions add` command to grant a fake permission to a role.
+
+    <CodeGroup>
+
+    ```typescript Syntax
+    ,fakepermissions add (role) (permission)
+    ```
+
+    ```javascript Example
+    ,fakepermissions add @mod manage_messages
+    ```
+
+    </CodeGroup>
+  </Accordion>
+
+  <Accordion title="Revoke a fake permission from a role">
+    Run the `fakepermissions remove` command to revoke a fake permission from a role.
+
+    <CodeGroup>
+
+    ```javascript Syntax
+    ,fakepermissions remove (role) (permission)
+    ```
+
+    ```javascript Example
+    ,fakepermissions remove @mod manage_messages
+    ```
+
+    </CodeGroup>
+  </Accordion>
+</AccordionGroup>
+
+### **What permissions should I grant roles?**
+
+<AccordionGroup>
+  <Accordion title="Moderator">
+    - `manage_messages` - Allows the moderator with the role to manage messages.
+    - `moderate_members` - Allows the moderator with the role to timeout members.
+    - `manage_nicknames` - Allows the moderator with the role  to change nicknames.
+    - `kick_members` - Allows the moderator with the role to kick members from the server.
+      ```javascript
+      ,fakepermissions add (role) manage_messages, moderate_members, manage_nicknames, kick_members
+      ```
+  </Accordion>
+
+  <Accordion title="Administrator">
+    - `manage_messages` - Allows the administrator with the role to delete messages.
+    - `moderate_members` - Allows the administrator with the role to timeout members.
+    - `manage_nicknames` - Allows the administrator with the role to change nicknames.
+    - `manage_roles` - Allows the administrator with the role to manage roles.
+    - `ban_members` - Allows the administrator with the role to ban members.
+    - `kick_members` - Allows the administrator with the role to kick members.
+      ```javascript
+      ,fakepermissions add (role) manage_messages, moderate_members, manage_nicknames, manage_roles, ban_members, kick_members
+      ```
+  </Accordion>
+
+  <Accordion title="Co-Owner">
+    - `administrator` - Allows the co-owner with the role to use every moderation command.
+      ```javascript
+      ,fakepermissions add (role) administrator
+      ```
+  </Accordion>
+</AccordionGroup>
