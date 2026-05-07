@@ -10,6 +10,10 @@ Instead of a user having a real dangerous permission, you can restrict them to o
 
 ### **Setting up Fake Permissions**
 
+<Warning>
+  You must be the **server owner** to run these commands.
+</Warning>
+
 <AccordionGroup>
   <Accordion title="Grant a fake permission to a role">
     Run the `fakepermissions add` command to grant a fake permission to a role.
@@ -20,7 +24,7 @@ Instead of a user having a real dangerous permission, you can restrict them to o
     ,fakepermissions add (role) (permission)
     ```
 
-    ```javascript Example
+    ```typescript Example
     ,fakepermissions add @mod manage_messages
     ```
 
@@ -32,11 +36,11 @@ Instead of a user having a real dangerous permission, you can restrict them to o
 
     <CodeGroup>
 
-    ```javascript Syntax
+    ```typescript Syntax
     ,fakepermissions remove (role) (permission)
     ```
 
-    ```javascript Example
+    ```typescript Example
     ,fakepermissions remove @mod manage_messages
     ```
 
@@ -52,7 +56,7 @@ Instead of a user having a real dangerous permission, you can restrict them to o
     - `moderate_members` - Allows the moderator with the role to timeout members.
     - `manage_nicknames` - Allows the moderator with the role  to change nicknames.
     - `kick_members` - Allows the moderator with the role to kick members from the server.
-      ```javascript
+      ```typescript
       ,fakepermissions add (role) manage_messages, moderate_members, manage_nicknames, kick_members
       ```
   </Accordion>
@@ -64,14 +68,14 @@ Instead of a user having a real dangerous permission, you can restrict them to o
     - `manage_roles` - Allows the administrator with the role to manage roles.
     - `ban_members` - Allows the administrator with the role to ban members.
     - `kick_members` - Allows the administrator with the role to kick members.
-      ```javascript
+      ```typescript
       ,fakepermissions add (role) manage_messages, moderate_members, manage_nicknames, manage_roles, ban_members, kick_members
       ```
   </Accordion>
 
   <Accordion title="Co-Owner">
     - `administrator` - Allows the co-owner with the role to use every moderation command.
-      ```javascript
+      ```typescript
       ,fakepermissions add (role) administrator
       ```
   </Accordion>
