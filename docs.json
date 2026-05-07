@@ -25,7 +25,9 @@
           "configuration/autoresponder",
           "configuration/fake-permissions"
         ]
-      },
+      }
+    ]
+  },
   "logo": "/assets/avatar.png",
   "appearance": {
     "default": "dark",
